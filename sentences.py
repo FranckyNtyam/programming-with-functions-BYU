@@ -4,6 +4,7 @@ File Name: sentensec.py
 Author: Ntyam adjomo Francky Ludovic
 
 Purpose: 
+Write a Python program and write and run test functions to help you find and fix mistakes.
 """
 
 import random
@@ -12,10 +13,23 @@ import random
 
 def main():
     #quantity variable that help us to determine if determine, noun, verb are single or plural.
-    tenses = ["past", "present", "future"]
-    for q in range(1, 7):
-        tense = random.choice(tenses)
-        print(get_phrase(q, tense))
+    # a.	single	past
+    print(get_sentence(1, "past"))
+
+    # b.	single	present
+    print(get_sentence(1, "present"))
+
+    # c.	single	future
+    print(get_sentence(1, "future"))
+    
+    # d.	plural	past
+    print(get_sentence(2, "past"))
+
+    # e.	plural	present
+    print(get_sentence(2, "present"))
+
+    # f.	plural	future
+    print(get_sentence(2, "future")) 
        
 
 def get_determiner(quantity):
@@ -139,12 +153,12 @@ def get_prepositional_phrase(quantity):
     Return: a prepositional phrase.
     """
 
-    prepositional_phrase = get_preposition + get_determiner(quantity) + get_noun(quantity)
+    prepositional_phrase = get_preposition() + " " + get_determiner(quantity) + " " + get_noun(quantity)
     return prepositional_phrase
 
-def get_phrase(quantity, tense):
+def get_sentence(quantity, tense):
 
-    phrase = get_determiner(quantity) + " " + get_noun(quantity) + " " + get_verb(quantity, tense) + " " + get_preposition() + " " + get_determiner(quantity) + " " + get_noun(quantity)
-    return phrase
+    sentence = get_determiner(quantity).capitalize() + " " + get_noun(quantity) + " " + get_verb(quantity, tense) + " " + get_prepositional_phrase(quantity) + "."
+    return sentence
 
 main()
