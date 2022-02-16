@@ -1,0 +1,35 @@
+Proposal for a Student Chosen Program
+
+(This is a proposal. All proposals are written with our best knowledge
+at the beginning of a project. As we progress from the beginning to the
+end of a project, we gain more knowledge, and some of the ideas we
+proposed change. This is part of completing any project and is fine.
+However, we still must write a proposal so that our teachers or
+supervisors know what we intend to do. Please answer each of the
+following questions to the best of your knowledge.)
+
+1. What is the title of your program? Data visualization
+
+2. What real world problem will your program address or help to solve?
+
+- My program will assist in the telling of stories by filtering data into a more understandable format and highlighting trends and outliers.
+
+3. What will you learn from developing this program?
+
+- I will learn how to use pandas module to analyse and manipulate data.
+
+4. What Python modules will your program use? (Some examples are: csv,
+datetime, functools, matplotlib, math, pandas, pytest, random, requests,
+and tkinter.)
+
+- my programme will use pandas
+
+5. Will you separate your Python program into functions that each
+perform a single task?
+
+- Yes, yes I will do that.
+
+6. Will you write test functions to test many of your program functions?
+
+- Yes, I will to do it.
+
